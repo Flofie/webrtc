@@ -75,22 +75,17 @@
 }
 
 .button-accept {
-  background-color: mat.get-color-from-palette($app-primary, 500);
+  background-color: "yellow";
   margin-left: auto;
 }
 
 .button-accept:hover {
-  background: mat.get-color-from-palette($app-primary, 600)
-    radial-gradient(
-      circle,
-      transparent 1%,
-      mat.get-color-from-palette($app-primary, 600) 1%
-    )
+  background: "yellow" radial-gradient(circle, transparent 1%, yellow 1%)
     center/15000%;
 }
 
 .button-accept:active {
-  background-color: mat.get-color-from-palette($app-primary, 300);
+  background-color: "green";
   background-size: 100%;
   transition: background 0s;
 }
