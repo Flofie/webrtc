@@ -108,7 +108,7 @@
             "outputPath": "dist/receiver",
             "index": "projects/receiver/src/index.html",
             "main": "projects/receiver/src/main.ts",
-            "polyfills": ["zone.js"],
+            "polyfills": ["projects/receiver/src/polyfills.ts", "zone.js"],
             "tsConfig": "projects/receiver/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
