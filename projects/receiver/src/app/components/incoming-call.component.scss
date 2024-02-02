@@ -1,0 +1,96 @@
+.incomming-call-box {
+  z-index: 1;
+  color: #ffffff;
+  position: absolute;
+  background-color: #ec9d00;
+  display: flex;
+  width: 100%;
+  min-height: 80px;
+  padding: 21px;
+  box-sizing: border-box;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: pulseColor;
+
+  @keyframes pulseColor {
+    0% {
+      background-color: #ec9d00;
+    }
+    50% {
+      background-color: #a46e00;
+    }
+    100% {
+      background-color: #ec9d00;
+    }
+  }
+
+  .image {
+    min-width: 50px;
+    margin-right: 21px;
+    display: flex;
+    align-items: center;
+
+    mat-icon {
+      height: 50px;
+      width: 50px;
+    }
+  }
+
+  .message {
+    display: flex;
+    width: 100%;
+    font-size: 18px;
+    font-family: "alberta-mada-semibold";
+    .text {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.action-button {
+  width: calc(50% - 40px);
+  height: 40px;
+  border-radius: 10px;
+  background: unset;
+  border: unset;
+  font-family: "alberta-mada-semibold";
+  max-width: 200px;
+  background-position: center;
+  transition: background 0.8s;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  color: var(--primary-contrast-500);
+  font-size: 0.875em;
+  z-index: 100;
+}
+
+.action-button + .action-button {
+  margin-left: 10px;
+}
+
+.button-accept {
+  background-color: mat.get-color-from-palette($app-primary, 500);
+  margin-left: auto;
+}
+
+.button-accept:hover {
+  background: mat.get-color-from-palette($app-primary, 600)
+    radial-gradient(
+      circle,
+      transparent 1%,
+      mat.get-color-from-palette($app-primary, 600) 1%
+    )
+    center/15000%;
+}
+
+.button-accept:active {
+  background-color: mat.get-color-from-palette($app-primary, 300);
+  background-size: 100%;
+  transition: background 0s;
+}

@@ -1,0 +1,35 @@
+.page {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+#remoteVideo {
+  width: 100%;
+  padding: 0 10px 10px 10px;
+  max-height: 100%;
+  align-self: flex-start;
+}
+
+.remoteVideoPlaceholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 10px 10px 10px;
+  height: 600px;
+  border: solid black 1px;
+}
+
+itl-alberta-icon {
+  margin-right: 10px;
+}
+
+#localVideo {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  height: 140px;
+}

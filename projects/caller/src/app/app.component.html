@@ -1,0 +1,9 @@
+<div class="page">
+  <video #localVideo autoplay playsInline id="localVideo"></video>
+  <video #remoteVideo autoplay playsInline [ngStyle]="{ display: this.connected ? 'block' : 'none' }"
+    id="remoteVideo"></video>
+  <div class="remoteVideoPlaceholder" *ngIf="this.connected === false">
+    <button (click)="this.call()" [disabled]="this.connecting || this.busy">{{ (this.connecting ? 'videoCall.calling' :
+      'videoCall.call') }}</button>
+  </div>
+</div>

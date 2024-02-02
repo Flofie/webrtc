@@ -1,0 +1,22 @@
+.videos {
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+}
+
+.remote-video-wrapper {
+  margin: auto;
+  padding: 20px;
+}
+
+#localVideo {
+  position: absolute;
+  height: 140px;
+  bottom: -37px;
+  right: 9px;
+}
+
+#remoteVideo {
+  width: 100%;
+  max-height: 100%;
+}
