@@ -1,20 +1,5 @@
-<div class="page-wrapper">
-  <itl-incoming-call *ngIf="incomingCall | async" [offer]="offer | async" [caller]="caller | async"
-    (accept)="acceptIncomingCall($event)"></itl-incoming-call>
-  <div>
-    <div class="chat-avatar"></div>
-    Videochat
-  </div>
-  <div class="videos">
-    <video #localVideo autoplay playsinline id="localVideo"></video>
+<h1>Receiver</h1>
+<itl-incoming-call *ngIf="incomingCall | async" [offer]="offer | async" [caller]="caller | async"
+  (accept)="acceptIncomingCall($event)"></itl-incoming-call>
 
-    <div class="remote-video-wrapper">
-      <video #remoteVideo autoplay playsinline id="remoteVideo"></video>
-    </div>
-  </div>
-  <!-- <div>
-    <div>{{ this.offers.length}} </div>
-    <div>{{ this.candidates | json}} </div>
-    <div>{{ this.tracks | json}} </div>
-  </div> -->
-</div>
+<router-outlet></router-outlet>
