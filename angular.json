@@ -123,8 +123,7 @@
             ],
             "styles": ["projects/receiver/src/styles.scss"],
             "scripts": [],
-            "serviceWorker": true,
-            "ngswConfigPath": "projects/receiver/ngsw-config.json"
+            "serviceWorker": false
           },
           "configurations": {
             "production": {
