@@ -110,6 +110,11 @@
             "main": "projects/receiver/src/main.ts",
             "polyfills": ["projects/receiver/src/polyfills.ts", "zone.js"],
             "tsConfig": "projects/receiver/tsconfig.app.json",
+            "sourceMap": {
+              "scripts": true,
+              "styles": true,
+              "vendor": true
+            },
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/receiver/src/favicon.ico",
