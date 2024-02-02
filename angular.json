@@ -20,18 +20,14 @@
             "outputPath": "dist/caller",
             "index": "projects/caller/src/index.html",
             "main": "projects/caller/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/caller/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/caller/src/favicon.ico",
               "projects/caller/src/assets"
             ],
-            "styles": [
-              "projects/caller/src/styles.scss"
-            ],
+            "styles": ["projects/caller/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -82,19 +78,14 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/caller/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/caller/src/favicon.ico",
               "projects/caller/src/assets"
             ],
-            "styles": [
-              "projects/caller/src/styles.scss"
-            ],
+            "styles": ["projects/caller/src/styles.scss"],
             "scripts": []
           }
         }
@@ -117,19 +108,18 @@
             "outputPath": "dist/receiver",
             "index": "projects/receiver/src/index.html",
             "main": "projects/receiver/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/receiver/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/receiver/src/favicon.ico",
-              "projects/receiver/src/assets"
+              "projects/receiver/src/assets",
+              "projects/receiver/src/manifest.webmanifest"
             ],
-            "styles": [
-              "projects/receiver/src/styles.scss"
-            ],
-            "scripts": []
+            "styles": ["projects/receiver/src/styles.scss"],
+            "scripts": [],
+            "serviceWorker": true,
+            "ngswConfigPath": "projects/receiver/ngsw-config.json"
           },
           "configurations": {
             "production": {
@@ -179,19 +169,15 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/receiver/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/receiver/src/favicon.ico",
-              "projects/receiver/src/assets"
+              "projects/receiver/src/assets",
+              "projects/receiver/src/manifest.webmanifest"
             ],
-            "styles": [
-              "projects/receiver/src/styles.scss"
-            ],
+            "styles": ["projects/receiver/src/styles.scss"],
             "scripts": []
           }
         }
